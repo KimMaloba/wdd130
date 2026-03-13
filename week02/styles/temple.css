@@ -4,7 +4,7 @@
 }
 
 body {
-  font-family: Ariel, sans-serif;
+  font-family: Arial, sans-serif;
   line-height: 1.6;
 }
 
@@ -49,7 +49,7 @@ section p {
 }
 
 ul {
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 footer {
