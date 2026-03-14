@@ -13,6 +13,27 @@ main {
   max-width: 840px;
 }
 
+main img {
+  width: 150px;
+  height: auto;
+}
+
+h1 {
+  color: darkblue;
+}
+
+main img {
+  width: 150px;
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: 0 0 30 px gray;
+}
+
+p {
+  padding: 0;
+}
+
 aside {
   width: 20rem;
   margin: 1rem;
@@ -27,27 +48,6 @@ aside {
 aside img {
   width: 200px;
   height: auto;
-}
-
-main img {
-  width: 150px;
-  height: auto;
-}
-
-h1 {
-  color: darkblue;
-}
-
-img {
-  width: 150px;
-  height: auto;
-  border: 1px solid black;
-  padding: 2px;
-  box-shadow: 0 0 30 px gray;
-}
-
-p {
-  padding: 0;
 }
 
 footer {
