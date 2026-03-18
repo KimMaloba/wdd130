@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --primary-color: darkblue;
   --secondary-color: #333;
@@ -14,6 +20,11 @@
   --max-width: 840px;
 }
 
+body {
+  font-size: 15px;
+  font-family: Roboto, Arial, sans-serif;
+}
+
 nav {
   background-color: var(--primary-color);
   padding: var(--medium-padding);
@@ -22,7 +33,7 @@ nav {
 nav a {
   color: var(--white);
   display: block;
-  padding: var(--large-padding);
+  padding: var(--medium-padding);
 }
 
 main {
@@ -30,11 +41,14 @@ main {
 }
 
 main img {
+  /* you most likely will have other CSS declarations here */
+  float: right;
   width: var(--image-width-small);
   height: var(--height);
   border: 1px solid var(--border-color);
   padding: var(--small-padding);
   box-shadow: 0 0 30px var(--shadow-color);
+  margin: 0 0 1rem 1rem;
 }
 
 /* main img { */
@@ -47,17 +61,19 @@ h1 {
 
 p {
   padding: 0;
+  margin: 1rem;
 }
 
 aside {
   width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
+  /* margin: 1rem; */
+  /* border: 1px solid rgb(0 0 0 / 0.2); */
   /* 1️⃣ */
-  padding: 1rem;
-  background-color: var(--third-color);
-  color: var(--secondary-color);
+  /* padding: 1rem; */
+  /* background-color: var(--third-color); */
+  /* color: var(--secondary-color); */
   text-align: center;
+  position: relative;
 }
 
 aside img {
@@ -65,8 +81,28 @@ aside img {
   height: var(--height);
 }
 
+aside h2 {
+  position: absolute;
+  top: 35px;
+  left: 85px;
+}
+
 footer {
-  margin-top: 15px;
+  margin-top: 1em;
   border-top: 1px solid var(--border-color);
   text-align: center;
+}
+
+/* Class Selectors */
+
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 2rem;
+  background-color: var(--third-color);
+  color: var(--border-color);
+}
+
+.indent {
+  padding-left: 1rem;
 }
