@@ -115,7 +115,7 @@ article {
 footer {
   text-align: left;
   margin-top: 20px;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--accent2-color);
   padding-top: 10px;
 }
 
