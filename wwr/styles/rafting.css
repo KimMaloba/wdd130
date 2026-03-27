@@ -32,6 +32,8 @@ footer {
 /* Header */
 header {
   /* background-color: var(--primary-color); */
+  display: grid;
+  grid-template-columns: 150px 1fr;
   color: white;
   /* display: flex; */
   /* justify-content: space-between; */
@@ -39,10 +41,15 @@ header {
   padding: 10px;
 }
 
+header img {
+  width: 120px;
+}
+
 /* Navigation */
 nav ul {
   list-style: none;
-  display: block;
+  display: flex;
+  justify-content: flex-end;
   gap: 15px;
   /* padding-left: 40px; */
   margin-top: 10px;
@@ -51,6 +58,7 @@ nav ul {
 nav a {
   color: var(--primary-color);
   text-decoration: none;
+  font-weight: bold;
 }
 
 /* Headings */
@@ -111,9 +119,39 @@ article {
   margin-left: 10px;
 }
 
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 200px 1fr;
+  align-items: center;
+  gap: 20px;
+}
+
+.history-content img {
+  width: 100%;
+}
+
+.adventure-gallery {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.adventure-gallery figure {
+  text-align: center;
+  width: 100%
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+}
+
 /* Footer */
 footer {
-  text-align: left;
+  /* text-align: left; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
   border-top: 1px solid var(--secondary-color);
   padding-top: 10px;
